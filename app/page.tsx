@@ -85,7 +85,12 @@ export default function Home() {
         <div className="p-4 border-b border-[#0e3d52]">
           <div className="flex items-center gap-2 mb-3">
             <div className="w-8 h-8 bg-[#00d4ff] rounded-lg flex items-center justify-center">
-              <span className="text-[#06232c] font-bold text-sm">T</span>
+              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="0" y="5" width="3.5" height="6" rx="1.75" fill="#06232c"/>
+                <rect x="5.25" y="1" width="3.5" height="14" rx="1.75" fill="#06232c"/>
+                <rect x="10.5" y="3" width="3.5" height="10" rx="1.75" fill="#06232c"/>
+                <rect x="15.75" y="6" width="2.25" height="4" rx="1.125" fill="#06232c"/>
+              </svg>
             </div>
             <span className="text-white font-bold text-lg">Vibe Trip</span>
           </div>

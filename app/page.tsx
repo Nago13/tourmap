@@ -87,7 +87,7 @@ export default function Home() {
             <div className="w-8 h-8 bg-[#00d4ff] rounded-lg flex items-center justify-center">
               <span className="text-[#06232c] font-bold text-sm">T</span>
             </div>
-            <span className="text-white font-bold text-lg">TourMap</span>
+            <span className="text-white font-bold text-lg">Vibe Trip</span>
           </div>
           <div className="flex items-center gap-2 bg-[#0a3040] rounded-lg px-3 py-2 mb-3">
             <div className="w-6 h-6 bg-[#1db954] rounded-full flex items-center justify-center">

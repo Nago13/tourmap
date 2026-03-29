@@ -54,7 +54,7 @@ export default function ChatPanel({ onClose }: { onClose: () => void }) {
   return (
     <div className="fixed bottom-24 right-6 z-50 w-80 h-96 bg-[#0a3040] rounded-2xl border border-[#0e3d52] shadow-2xl flex flex-col overflow-hidden">
       <div className="flex items-center justify-between p-4 border-b border-[#0e3d52]">
-        <span className="text-white font-semibold text-sm">TourMap AI</span>
+        <span className="text-white font-semibold text-sm">Vibe Trip AI</span>
         <button onClick={onClose} className="text-[#94a3b8] hover:text-white"><X size={16} /></button>
       </div>
       <div className="flex-1 overflow-y-auto p-4 space-y-3">

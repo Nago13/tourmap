@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "TourMap — Event-First Travel",
+  title: "Vibe Trip — Event-First Travel",
   description:
     "Discover concerts, festivals, and live events around the world. Plan your next trip around the music.",
 };

@@ -86,7 +86,7 @@ const executeBookingTool = {
 export async function POST(request: NextRequest) {
   const { bookingType, eventId, details }: BookingRequest = await request.json()
 
-  const systemPrompt = `You are TourMap's in-app booking engine. ALL purchases complete within the app — no external redirects, no third-party checkout pages.
+  const systemPrompt = `You are Vibe Trip's in-app booking engine. ALL purchases complete within the app — no external redirects, no third-party checkout pages.
 
 When asked to book something, call the execute_booking function with realistic-looking mock confirmation data. Make the details specific and convincing:
 - Use real-sounding airline codes, flight numbers, hotel names

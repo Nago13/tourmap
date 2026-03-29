@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+@import "tailwindcss";
+
+@theme inline {
+  /* Navy palette */
+  --color-navy-900: #03161d;
+  --color-navy-800: #06232c;
+  --color-navy-700: #0a3040;
+  --color-navy-600: #0e3d52;
+
+  /* Accent */
+  --color-accent: #00d4ff;
+
+  /* Semantic aliases */
+  --color-background: #06232c;
+  --color-card: #0a3040;
+  --color-foreground: #ffffff;
+  --color-muted: #94a3b8;
+
+  /* Typography */
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* ─── Base reset & global styles ─── */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #06232c;
+  color: #ffffff;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: #06232c;
+  color: #ffffff;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Custom scrollbar ─── */
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #03161d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0e3d52;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00d4ff;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0e3d52 #03161d;
+}
+
+/* ─── Typography helpers ─── */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+a {
+  color: #00d4ff;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* ─── Accent glow utility ─── */
+
+.glow-accent {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.25);
+}
+
+.text-accent {
+  color: #00d4ff;
+}
+
+/* ─── Card base ─── */
+
+.card {
+  background-color: #0a3040;
+  border-radius: 0.75rem;
+  border: 1px solid rgba(14, 61, 82, 0.6);
+}
+
+/* ─── Selection color ─── */
+
+::selection {
+  background: rgba(0, 212, 255, 0.25);
+  color: #ffffff;
+}
